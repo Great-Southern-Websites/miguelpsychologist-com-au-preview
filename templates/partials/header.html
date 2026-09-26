@@ -2,20 +2,33 @@
 <header class="site-header">
   <div class="container bar">
     <a class="brand" href="{=site.url}">
-      <!-- BUILDER: replace with the logo, or leave a wordmark if there is none.
-           Two images, one per theme, and main.css swaps them:
-             <img class="logo-light" src="{=site.url('images/logo.png')}" alt="Miguel Barreiro, Psychologist">
-             <img class="logo-dark" src="{=site.url('images/logo-dark.png')}" alt="Miguel Barreiro, Psychologist">
-           Both carry the name: only one is ever visible, and a hidden image is not
-           announced, so the link has exactly one name in either theme. -->
-      <span class="brand-name">Miguel Barreiro, Psychologist</span>
+      <img class="logo-light" src="{=site.url('images/logo.png')}" alt="Miguel Barreiro, Psychologist" width="656" height="141">
+      <img class="logo-dark" src="{=site.url('images/logo-dark.png')}" alt="Miguel Barreiro, Psychologist" width="656" height="141">
     </a>
     <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Toggle menu">
     <label for="nav-toggle" class="nav-toggle"><span></span></label>
     <nav class="site-nav" aria-label="Main navigation">
       <ul>
-        <!-- BUILDER: one <li> per page, mirroring the original site's navigation -->
-        <li><a href="{=site.url}">Home</a></li>
+        <li><a href="{=site.url('about')}">About Me</a></li>
+        <li>
+          <details>
+            <summary>Services</summary>
+            <ul>
+              <li><a href="{=site.url('clinical-psychology')}">Clinical Psychology</a></li>
+              <li><a href="{=site.url('forensic-psychology')}">Forensic Psychology</a></li>
+              <li><a href="{=site.url('hypnotherapy')}">Hypnotherapy</a></li>
+              <li><a href="{=site.url('relationship')}">Relationship Counselling</a></li>
+              <li><a href="{=site.url('psychosexual-therapy')}">Psychosexual Therapy</a></li>
+              <li><a href="{=site.url('transpersonal')}">Transpersonal Psychotherapy</a></li>
+              <li><a href="{=site.url('psychotherapy-for-trauma')}">Psychotherapy for Trauma</a></li>
+              <li><a href="{=site.url('adhd')}">Adult ADHD</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a href="{=site.url('fees')}">Fees</a></li>
+        <li><a href="{=site.url('blog')}">Blog</a></li>
+        <li><a class="nav-phone" href="tel:+61438227314">0438 227 314</a></li>
+        <li><a class="nav-contact" href="{=site.url('contact')}">Contact</a></li>
       </ul>
     </nav>
   </div>

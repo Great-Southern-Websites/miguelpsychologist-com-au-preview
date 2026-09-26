@@ -1,35 +1,30 @@
 {@io.quarkiverse.roq.frontmatter.runtime.model.Site site}
-<!-- Structured data for search engines (schema.org). BUILDER: fill every field
-     from the business's own details; delete keys you have no real value for.
-     Keep it accurate when contact details, hours or locations change. -->
+<!-- Structured data for search engines (schema.org). Keep it accurate when
+     contact details, hours or locations change. -->
 <script type="application/ld+json">
 {|{
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "MedicalBusiness",
   "@id": "|}{=site.url.absolute}{|#business",
   "name": "Miguel Barreiro, Psychologist",
   "url": "|}{=site.url.absolute}{|",
   "logo": "|}{=site.url('images/logo.png').absolute}{|",
-  "image": "|}{=site.url('images/logo.png').absolute}{|",
-  "description": "BUILDER: one sentence, the same as the home page description.",
-  "telephone": "+61 3 0000 0000",
-  "email": "hello@example.com",
+  "image": "|}{=site.url('images/share.jpg').absolute}{|",
+  "description": "Miguel Barreiro is a psychologist and psychotherapist in Box Hill, Melbourne, with over 25 years of experience in clinical, forensic, relationship and family therapy.",
+  "telephone": "+61 438 227 314",
+  "email": "miguel@miguelpsychologist.com.au",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "1 Example Street",
-    "addressLocality": "Suburb",
+    "streetAddress": "Suite 401/850 Whitehorse Rd",
+    "addressLocality": "Box Hill",
     "addressRegion": "VIC",
-    "postalCode": "3000",
+    "postalCode": "3128",
     "addressCountry": "AU"
   },
   "openingHoursSpecification": [
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "17:00" }
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday"], "opens": "09:00", "closes": "20:00" }
   ],
-  "sameAs": [],
-  "potentialAction": {
-    "@type": "ReserveAction",
-    "name": "Book",
-    "target": "|}{=site.url('contact').absolute}{|"
-  }
+  "availableLanguage": ["English", "Spanish"],
+  "sameAs": ["https://www.facebook.com/miguelpsychologist/"]
 }|}
 </script>

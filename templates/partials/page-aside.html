@@ -1,0 +1,23 @@
+{@io.quarkiverse.roq.frontmatter.runtime.model.Page page}
+{@io.quarkiverse.roq.frontmatter.runtime.model.Site site}
+{#let cur=page.data.getString('slug', '')}
+<aside class="page-aside">
+  {#if page.data.getString('section', '') == 'services'}
+  <h2>Services</h2>
+  <ul>
+    <li><a href="{=site.url('clinical-psychology')}"{#if cur == 'clinical-psychology'} aria-current="page"{/if}>Clinical Psychology</a></li>
+    <li><a href="{=site.url('forensic-psychology')}"{#if cur == 'forensic-psychology'} aria-current="page"{/if}>Forensic Psychology</a></li>
+    <li><a href="{=site.url('hypnotherapy')}"{#if cur == 'hypnotherapy'} aria-current="page"{/if}>Hypnotherapy</a></li>
+    <li><a href="{=site.url('relationship')}"{#if cur == 'relationship'} aria-current="page"{/if}>Relationship Counselling</a></li>
+    <li><a href="{=site.url('psychosexual-therapy')}"{#if cur == 'psychosexual-therapy'} aria-current="page"{/if}>Psychosexual Therapy</a></li>
+    <li><a href="{=site.url('transpersonal')}"{#if cur == 'transpersonal'} aria-current="page"{/if}>Transpersonal Psychotherapy</a></li>
+    <li><a href="{=site.url('psychotherapy-for-trauma')}"{#if cur == 'psychotherapy-for-trauma'} aria-current="page"{/if}>Psychotherapy for Trauma</a></li>
+    <li><a href="{=site.url('adhd')}"{#if cur == 'adhd'} aria-current="page"{/if}>Adult ADHD</a></li>
+  </ul>
+  {/if}
+  <h2>Make an appointment</h2>
+  <p>Call or text <a href="tel:+61438227314">0438 227 314</a>, email <a href="mailto:miguel@miguelpsychologist.com.au">miguel@miguelpsychologist.com.au</a>, or use the <a href="{=site.url('contact')}">enquiry form</a>.</p>
+  <p>In person in Box Hill on Monday to Wednesday. Telehealth by Zoom or telephone anywhere in Australia. Sessions in English or Spanish.</p>
+  <p><a href="{=site.url('fees')}">Fees and Medicare rebates</a></p>
+</aside>
+{/let}

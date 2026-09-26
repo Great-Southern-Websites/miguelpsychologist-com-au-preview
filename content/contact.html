@@ -1,0 +1,50 @@
+---
+title: "Contact"
+description: "Contact Miguel Barreiro, psychologist in Box Hill: phone, email, consulting room address, opening hours, parking and an enquiry form."
+layout: default
+---
+{@io.quarkiverse.roq.frontmatter.runtime.model.Page page}
+{@io.quarkiverse.roq.frontmatter.runtime.model.Site site}
+<section class="page-head">
+  <div class="container">
+    <p class="eyebrow">Contact</p>
+    <h1>Contact me</h1>
+    <p class="lead">For expert advice, call me on <a href="tel:+61438227314">0438 227 314</a> or fill out the form below.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="container contact-grid">
+    <div>
+      <dl class="facts">
+        <div><dt>Phone</dt><dd><a href="tel:+61438227314">0438 227 314</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:miguel@miguelpsychologist.com.au">miguel@miguelpsychologist.com.au</a></dd></div>
+        <div><dt>Address</dt><dd><a href="https://maps.google.com/maps?q=Suite+401%2F850+Whitehorse+Rd%2C+Box+Hill+VIC+3128">Suite 401/850 Whitehorse Rd<br>Box Hill VIC 3128</a></dd></div>
+        <div><dt>Languages</dt><dd>English and Spanish</dd></div>
+      </dl>
+      <h2 style="margin-top: 2rem;">Hours</h2>
+      <table class="hours">
+        <tbody>
+          <tr><th scope="row">Monday</th><td>9am to 8pm</td></tr>
+          <tr><th scope="row">Tuesday</th><td>9am to 8pm</td></tr>
+          <tr><th scope="row">Wednesday</th><td>9am to 8pm</td></tr>
+          <tr><th scope="row">Thursday</th><td>Telehealth only</td></tr>
+          <tr><th scope="row">Friday</th><td>Telehealth only</td></tr>
+        </tbody>
+      </table>
+      <p>Telehealth consultations are by Zoom or telephone, from anywhere in Australia or overseas.</p>
+      <h2 style="margin-top: 2rem;">Appointment access and parking</h2>
+      <p>The consulting room is in the Whitehorse Towers building in Box Hill, on the corner of Whitehorse Road and Nelson Road.</p>
+      <p>For your first consultation, wait for me in the foyer of the Chen Hotel, which is one of the entrances to the Towers from Nelson Road. Text me on arrival on <a href="tel:+61438227314">0438 227 314</a> and I will come down and greet you.</p>
+      <p>There is ample parking in the council car parks, entered from Nelson Road and Prospect Street, and also within the Box Hill Central complex.</p>
+    </div>
+    <div>
+      <h2>Enquire now</h2>
+      {#include partials/contact-form /}
+    </div>
+  </div>
+  <div class="container">
+    <div class="map">
+      <iframe loading="lazy" src="https://maps.google.com/maps?q=Miguel%20Barreiro%20Psychology&t=m&z=15&output=embed&iwloc=near" title="Map showing Miguel Barreiro Psychology in Box Hill" width="1200" height="360"></iframe>
+    </div>
+  </div>
+</section>

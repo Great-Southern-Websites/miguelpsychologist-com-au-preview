@@ -7,15 +7,16 @@ layout: default
 {! Code highlighting (web/app/main.js): bundled, loaded on posts only. !}
 {#bundle /}
 {/head}
-<section class="page-banner">
+<section class="page-head">
   <div class="container">
-    <p class="eyebrow">News</p>
+    <p class="eyebrow">Blog</p>
     <h1>{=page.title}</h1>
+    {#if page.description}<p class="lead">{=page.description}</p>{/if}
   </div>
 </section>
 <article class="section">
   <div class="container prose">
-    <p class="muted"><time datetime="{=page.date.isoDate}">{=page.date.format('d MMMM yyyy')}</time></p>
+    <p class="post-meta">Miguel Barreiro, <time datetime="{=page.date.isoDate}">{=page.date.format('d MMMM yyyy')}</time></p>
     {! A table of contents once a post has enough headings to need one. !}
     {#if page.toc.size >= 3}
     <nav class="toc" aria-label="On this page">
@@ -24,6 +25,7 @@ layout: default
     </nav>
     {/if}
     {#insert /}
-    <p><a href="{=site.url('posts')}">&larr; All news</a></p>
+    {#include partials/comments /}
+    <p class="post-nav"><a href="{=site.url('blog')}">&larr; All posts</a></p>
   </div>
 </article>
