@@ -1,6 +1,7 @@
 ---
 title: "Forensic Psychology"
-description: "Psycho-legal reports, psychometric assessment, Section 32 and Section 14 reports and medico-legal services for courts across Victoria."
+description: "Forensic psychological assessments, psychometric evaluations and medico-legal reports for criminal and civil proceedings in Victoria and New South Wales."
+lead: "Forensic psychological assessments, psychometric evaluations, medico-legal reports, and psychological reports for criminal and civil proceedings, including Verdins assessments in Victoria and Section 14 applications in New South Wales."
 layout: page
 eyebrow: Services
 section: services

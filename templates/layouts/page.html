@@ -7,7 +7,7 @@ layout: default
   <div class="container">
     {#if page.data.eyebrow??}<p class="eyebrow">{=page.data.eyebrow}</p>{/if}
     <h1>{=page.title}</h1>
-    {#if page.description}<p class="lead">{=page.description}</p>{/if}
+    {#if page.data.lead??}<p class="lead">{=page.data.lead}</p>{#else if page.description}<p class="lead">{=page.description}</p>{/if}
   </div>
 </section>
 <section class="section">
